@@ -16,7 +16,7 @@ bool IsLoggedIN(int user_type){
   cin>>password;
 
 
-  ifstream read(username + ".txt");
+  ifstream read("users/"+username + ".txt");
   getline(read, un);
   getline(read, pw);
   getline(read, ut);
@@ -53,7 +53,7 @@ int Login(){
     cout<<"select a username: ";cin>>username;
     cout<<"select a password: "; cin>>password;
     ofstream file;
-    file.open("/users"+ username + ".txt");
+    file.open("users/"+ username + ".txt");
 
     file<<username<<endl<<password<<endl<<user_type;
 

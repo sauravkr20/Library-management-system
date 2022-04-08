@@ -29,6 +29,6 @@ void read_record()
       cout<<"Title: "<<row[0]<<"\nAuthor: "<<row[1]<<"\nISBN: "<<row[2]<<"\nPublication: "<<row[3]<<"\nIssued to: "<<row[4]<<endl<<endl;
 
     }
-    cout<<"finished";
+    cout<<"finished\n";
     fin.close();
 }
